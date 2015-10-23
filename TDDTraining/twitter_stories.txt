@@ -1,0 +1,42 @@
+TWITTER:
+
+US01
+As an authenticated user
+I can share a short text or small photo with my friends
+so that I can pass a key message to them effectively
+
+US02
+As a user
+I can load up to 10 most important news from my friends
+so that I can avoid reading all news
+
+US03
+As an authenticated user
+I can read basic contact information about other users
+so that I can find my real friends in a twitter catalogue
+
+
+FOODIE:
+As a user
+I want to authenticate once and use multiple services in the cloud
+so that I can save my time and increase productivity
+
+
+
+JBEHAVE
+
+Scenario: Publish my tweet
+
+Given that I am already authenticated in Twitter
+
+When I publish my text
+Then it is displayed on my dashboard
+
+When I publish my text
+Then it is displayed on my friedns' dashboards
+
+
+Scenario: My published tweet too long
+
+When my published text is too long (max. 30 chars)
+Then I get an error message that the text is too long
